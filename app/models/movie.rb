@@ -1,4 +1,4 @@
-class Movie < ActiveRecord::Base
+	class Movie < ActiveRecord::Base
 	validates :title, :presence => true,length:{minimum: 2}
 	validates :year, :presence => true  
 	validates :rating, :presence => true,format: { with: /\A[0-9]\z/}
